@@ -1,9 +1,20 @@
-name: linter-check
+name: Linter Check
+
 on: [push]
+
 jobs:
-  make-lint-action:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-      - run: make lint
+      - name: Set up Python 3.8
+        uses: actions/setup-python3
+        with:
+          python-version: 3.8
+      - name: Install dependencies
+        run: |
+          pip install poetry
+          make install
+      - name: Run linter and pytest
+        run: |
+          make lint
