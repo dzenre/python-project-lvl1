@@ -1,19 +1,17 @@
-name: Linter Check
+name: make-master
 
-on: [push]
+on:
+  - push
+    
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: makefile
-        uses: ./Makefile
-      - name: Install dependencies
-        run: |
-          pip install poetry
-          
-      - name: Run linter and pytest
-        run: |
-          make lint
+      - uses: actions/checkout@main
+        with:
+          fetch-depth: 1
+      - name: Run Makefile
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
+        run: make lint
