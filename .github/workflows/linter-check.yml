@@ -1,4 +1,4 @@
-name: make-master
+name: Linter check
 
 on:
   - push
@@ -9,10 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-python@v1
-        with:
-         python-version: 3.8
-      - uses: Gr1N/setup-poetry@v4
-      - run: poetry --version
       - name: Run Makefile
         run: make lint
