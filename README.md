@@ -7,3 +7,6 @@
 
 brain-even:
 <a href="https://asciinema.org/a/DqtUiTrVCTZ5V7yTxB4YnDUbh" target="_blank"><img src="https://asciinema.org/a/DqtUiTrVCTZ5V7yTxB4YnDUbh.svg" /></a>
+
+brain-calc:
+<a href="https://asciinema.org/a/P4sQOxDOiJ8HlwLzD4GsPj8R1" target="_blank"><img src="https://asciinema.org/a/P4sQOxDOiJ8HlwLzD4GsPj8R1.svg" /></a>
