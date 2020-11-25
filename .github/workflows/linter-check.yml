@@ -11,8 +11,12 @@ jobs:
       - uses: actions/checkout@main
         with:
           fetch-depth: 1
-      - name: install
-        run: pip poetry install
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v1
+        with:
+         python-version: 3.8
+      - uses: Gr1N/setup-poetry@v4
+      - run: poetry --version
       - name: Run Makefile
         env:
           TOKEN: ${{ secrets.TOKEN }}
