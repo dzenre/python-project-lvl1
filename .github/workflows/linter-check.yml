@@ -9,5 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: |
+         pip install poetry
+        shell: bash
       - name: Run Makefile
         run: make lint
