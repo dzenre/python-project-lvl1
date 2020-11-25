@@ -5,6 +5,4 @@
 
 [![Linter check](https://github.com/dzenre/python-project-lvl1/workflows/linter-check/badge.svg)](https://github.com/dzenre/python-project-lvl1/actions)
 
-<script id="asciicast-DqtUiTrVCTZ5V7yTxB4YnDUbh" src="https://asciinema.org/a/DqtUiTrVCTZ5V7yTxB4YnDUbh.js" async></script>
-
-
+<a href="https://asciinema.org/a/DqtUiTrVCTZ5V7yTxB4YnDUbh" target="_blank"><img src="https://asciinema.org/a/DqtUiTrVCTZ5V7yTxB4YnDUbh.svg" /></a>
