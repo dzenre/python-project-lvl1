@@ -9,7 +9,7 @@ def is_even():
     wins_count = 0
     while wins_count < 3:
         random_number = randint(1, 1000)
-        guess = prompt.string('Question: {}\n'.format(random_number))        
+        guess = prompt.string('Question: {}\n'.format(random_number))
         if (random_number % 2 == 0 and guess == 'yes') or (random_number % 2 != 0 and guess == 'no'):
             print('Correct!')
             wins_count += 1
