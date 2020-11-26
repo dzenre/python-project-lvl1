@@ -10,5 +10,8 @@ build:
 package-install:
 	pip install --user dist/*.whl
 
+package-upgrade:
+	pip install --upgrade dist/*.whl
+
 lint:
 	poetry run flake8 brain_games
