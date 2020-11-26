@@ -39,7 +39,7 @@ def calc():
             wins_count += 1
         else:
             print(  # noqa: WPS421
-                '"{}" is a wrong answer! Correct answer was "{}"'.  # noqa: P101, E501
+                '"{}" is a wrong! Correct answer was "{}"'.  # noqa: P101
                 format(guess, answer),
                 )
             print("Let's try again, {}!".format(player))  # noqa: WPS421, P101

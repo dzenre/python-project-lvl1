@@ -7,7 +7,7 @@ from brain_games.cli import welcome_user
 
 
 def is_even(num):
-    """Check if number is even and assign correct answer."""  # noqa: DAR101, DAR201, E501
+    """Check if number is even."""  # noqa: DAR101, DAR201
     if num % 2 == 0:
         answer = 'yes'
         return True, answer
@@ -32,7 +32,7 @@ def check_even():
             wins_count += 1
         else:
             print(  # noqa: WPS421
-                '"{}" is a wrong answer! Correct answer was "{}"'.  # noqa: P101, E501
+                '"{}" is a wrong! Correct answer was "{}"'.  # noqa: P101
                 format(guess, answer),
                 )
             print("Let's try again, {}!".format(player))  # noqa: WPS421, P101
