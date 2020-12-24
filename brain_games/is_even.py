@@ -7,7 +7,14 @@ from brain_games.cli import welcome_user
 
 
 def is_even(num):
-    """Check if number is even."""  # noqa: DAR101, DAR201
+    """Check if random number is even.
+
+    Args:
+        num : number to check.
+
+    Returns:
+        string : 'yes' if number is prime, else 'no'
+    """
     if num % 2 == 0:
         answer = 'yes'
         return True, answer

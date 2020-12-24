@@ -1,5 +1,5 @@
 """Brain calc game."""
-from random import randint, choice
+from random import randint, choice   # noqa: I001
 
 import prompt
 
@@ -7,7 +7,12 @@ from brain_games.cli import welcome_user
 
 
 def generate_rand_expression():
-    """Generate random expression and ask for guess."""  # noqa: DAR201
+    """Generate random expression and ask for guess.
+
+    Returns:
+        answer : right answer
+        guess: user's answer
+    """
     randnum1 = randint(1, 100)  # noqa: S311
     randnum2 = randint(1, 100)  # noqa: S311
     operator = choice('+-*')  # noqa: S311
@@ -18,7 +23,7 @@ def generate_rand_expression():
     elif operator == '*':
         answer = randnum1 * randnum2
     guess = prompt.string(
-        'Question: {} {} {}\n'.format(  # noqa: P101
+        'Question: {0} {1} {2}\n'.format(
             randnum1,
             operator,
             randnum2,
@@ -39,7 +44,7 @@ def calc():
             wins_count += 1
         else:
             print(  # noqa: WPS421
-                '"{}" is a wrong! Correct answer was "{}"'.  # noqa: P101
+                '"{0}" is a wrong! Correct answer was "{1}"'.
                 format(guess, answer),
                 )
             print("Let's try again, {}!".format(player))  # noqa: WPS421, P101
