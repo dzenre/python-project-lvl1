@@ -15,10 +15,10 @@ def is_prime():
     for index in range(1, randnum + 1):
         if randnum % index == 0:
             count += 1
-        if count > 2:
-            answer = 'no'
-        else:
-            answer = 'yes'
+    if count > 2:
+        answer = 'no'
+    else:
+        answer = 'yes'
     return answer, question
 
 
