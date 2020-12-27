@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 """Main function."""
-from brain_games.is_even import check_even
+from brain_games.engine import main_flow
 
 
 def main():
-    """Enter user name for a greeting."""
-    print('Welcome to the Brain Games!')  # noqa: WPS421
-    check_even()
+    """Start game."""
+    main_flow('is_even')
 
 
 if __name__ == '__main__':
